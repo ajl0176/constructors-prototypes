@@ -1,4 +1,4 @@
-// Hey Carolina Code School Hackers! Enjoy!
+ // Hey Carolina Code School Hackers! Enjoy!
 // Make sure to open your js consoles!
 
 //          __  _ ___ __  _
@@ -28,7 +28,6 @@ function expect(target) {
     }
   }
 }
-
 //                          __                  __
 //   _________  ____  _____/ /________  _______/ /_____  __________
 //  / ___/ __ \/ __ \/ ___/ __/ ___/ / / / ___/ __/ __ \/ ___/ ___/
@@ -36,10 +35,33 @@ function expect(target) {
 // \___/\____/_/ /_/____/\__/_/   \__,_/\___/\__/\____/_/  /____/
 //
 // ONLY ADD CODE TO THIS SECTION
+//
+function Dog ({hungry = true} = {}){
+this.name = name
+this.color = 'red';
+this.status = 'normal'
+this.hungry = hungry
+};
 
+function Human ({cool = false} = {}){
+this.cool = cool
+}
 
+Human.prototype.pet = function(dog){
+  dog.status = 'happy';
+}
 
+Human.prototype.feed = function (dog){
+dog.hungry = false;
+}
 
+Dog.prototype.hungry = function(dog){
+  dog.hungry = oz.hungry;
+}
+
+Human.prototype.cool = function(human){
+  human.cool = faith.cool;
+}
 //        __
 //   ____/ /___  ____ ______
 //  / __  / __ \/ __ `/ ___/
@@ -56,20 +78,24 @@ let moonshine = new Dog({
   color: "blue-red"
 });
 
-let charlie = new Dog();
+let charlie = new Dog({
 
+});
 
 //     __
 //    / /_  __  ______ ___  ____ _____  _____
-//   / __ \/ / / / __ `__ \/ __ `/ __ \/ ___/
+///   / __ \/ / / / __ `__ \/ __ `/ __ \/ ___/
 //  / / / / /_/ / / / / / / /_/ / / / (__  )
 // /_/ /_/\__,_/_/ /_/ /_/\__,_/_/ /_/____/
 
-let mady = new Human();
+let mady = new Human({
+});
 
 let faith = new Human({
   cool: true
 });
+
+
 
 
 //                     __           __  __    _                             __
